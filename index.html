@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Static Site</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Static Site</h1>
+    <p>Deployed with Jenkins CI/CD 🚀</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>Hello, World!</h2>
+    <p>This is a simple static website that has been deployed automatically using Jenkins and GitHub.</p>
+
+    <h3>Features:</h3>
+    <ul>
+        <li>CI/CD with Jenkins</li>
+        <li>Auto-deployment on code push</li>
+        <li>GitHub Webhook Integration</li>
+        <li>Hosted on Apache (or Nginx)</li>
+    </ul>
+
+    <p>Happy deploying! 🎉</p>
+</div>
+
+<footer>
+    &copy; 2025 My Static Site. All rights reserved.
+</footer>
+
+</body>
+</html>
